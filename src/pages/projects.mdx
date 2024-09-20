@@ -1,0 +1,36 @@
+import BaseLayout from "@/layouts/Base.astro"
+import ProjectCard from "@/components/ProjectCard.astro"
+import { buttonVariants } from "@/components/ui/button"
+
+<BaseLayout>
+# Projects
+These are some projects that I've made or contributed to. Check them out!
+<div class="grid grid-cols-2 gap-5">
+  <div>
+    ### Art Class
+    A decent game site and proxy powered by Ultraviolet. Currently planning a complete revamp to make it more than just a game site.
+
+    <a href="https://artclass.site" target="_blank">
+      <img src="/screenshots/artclass.png" class="w-full rounded-lg" />
+    </a>
+  </div>
+
+  <div>
+    ### Mocha
+    A sleek and stylish proxy frontend that has the features essential for a smooth browsing experience.
+
+    <a href="https://mochaproxy.com" target="_blank">
+      <img src="/screenshots/mocha.png" class="w-full rounded-lg" />
+    </a>
+  </div>
+
+  <div>
+    ### Flux
+    A work-in-progress fullstack web framework for JavaScript, written with Bun, similar to Laravel or Ruby on Rails. Still very early in development.
+
+    <a href="https://go.proudparrot2.com/flux" target="_blank">
+      <img src="/screenshots/flux.png" class="w-full rounded-lg" />
+    </a>
+  </div>
+</div>
+</BaseLayout>

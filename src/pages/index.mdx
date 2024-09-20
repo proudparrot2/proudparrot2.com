@@ -1,0 +1,72 @@
+import BaseLayout from "../layouts/Base.astro"
+import { Progress } from "@/components/ui/progress"
+import { Label } from "@/components/ui/label"
+
+<BaseLayout>
+
+<img src="/mountains.png" class="w-full rounded-lg" />
+
+# Hello world!
+
+I'm proudparrot2, a 16/yo high school student interested in web development and computer science. I really like working with:
+
+- TypeScript
+- React
+- Next.js
+- Bun
+
+## Hobbies
+I enjoy camping, biking, video games, electronics, servers, and open-source software.
+
+Soon, I want to start getting into networking and other homelab things.
+
+## Skills
+
+<div class="grid grid-cols-3 gap-5">
+  <div class="flex flex-col gap-2"> 
+    <Label className="text-lg font-semibold">HTML</Label>
+    <Progress value={100} />
+  </div>
+
+  <div class="flex flex-col gap-2"> 
+    <Label className="text-lg font-semibold">JavaScript</Label>
+    <Progress value={100} />
+  </div>
+
+  <div class="flex flex-col gap-2"> 
+    <Label className="text-lg font-semibold">CSS</Label>
+    <Progress value={100} />
+  </div>
+
+  <div class="flex flex-col gap-2"> 
+    <Label className="text-lg font-semibold">React</Label>
+    <Progress value={85} />
+  </div>
+
+  <div class="flex flex-col gap-2"> 
+    <Label className="text-lg font-semibold">Next.js</Label>
+    <Progress value={80} />
+  </div>
+
+  <div class="flex flex-col gap-2"> 
+    <Label className="text-lg font-semibold">Bun</Label>
+    <Progress value={90} />
+  </div>
+
+  <div class="flex flex-col gap-2"> 
+    <Label className="text-lg font-semibold">Vue</Label>
+    <Progress value={30} />
+  </div>
+
+  <div class="flex flex-col gap-2"> 
+    <Label className="text-lg font-semibold">Gleam</Label>
+    <Progress value={12} />
+  </div>
+
+  <div class="flex flex-col gap-2"> 
+    <Label className="text-lg font-semibold">Rust</Label>
+    <Progress value={-1} />
+  </div>
+</div>
+
+</BaseLayout>

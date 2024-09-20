@@ -1,0 +1,20 @@
+---
+import Navbar from "../components/Navbar.astro"
+import "../styles.css"
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="shortcut icon" href="/wave.png" type="image/png">
+		<title>proudparrot2</title>
+	</head>
+	<body>
+    <Navbar />
+		<div class="prose px-8 py-4 pb-16 min-w-full">
+      <slot />
+    </div>
+	</body>
+</html>
